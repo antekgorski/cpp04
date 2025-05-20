@@ -6,7 +6,7 @@
 /*   By: agorski <agorski@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/19 13:44:55 by agorski           #+#    #+#             */
-/*   Updated: 2025/05/20 18:49:31 by agorski          ###   ########.fr       */
+/*   Updated: 2025/05/20 18:55:56 by agorski          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,6 @@ Cat& Cat::operator=(const Cat& other)
     if (this != &other)
     {
         this->type_ = other.type_;
-        
         Brain* Tempbrain_ = new Brain(*other.brain_);
         delete this->brain_;
         this->brain_ = Tempbrain_;
