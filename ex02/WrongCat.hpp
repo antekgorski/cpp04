@@ -1,35 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Cat.hpp                                            :+:      :+:    :+:   */
+/*   WrongCat.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: agorski <agorski@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/19 13:44:58 by agorski           #+#    #+#             */
-/*   Updated: 2025/05/21 12:02:41 by agorski          ###   ########.fr       */
+/*   Created: 2025/05/15 15:09:43 by agorski           #+#    #+#             */
+/*   Updated: 2025/05/19 18:37:06 by agorski          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef CAT_HPP
-# define CAT_HPP
+#ifndef WRONGCAT_HPP
+# define WRONGCAT_HPP
 
-# include "Animal.hpp"
-# include "Brain.hpp"
+# include "WrongAnimal.hpp"
 
-class Cat : public Animal
+class WrongCat : public WrongAnimal
 {
-    private:
-        Brain* brain_;
     public:
-        Cat();
-        Cat(std::string type);
-        Cat(const Cat& other);
-        ~Cat();
-        Cat& operator=(const Cat& other);
-        void makeSound() const;
+        WrongCat();
+        WrongCat(std::string type);
+        WrongCat(const WrongCat& other);
+        ~WrongCat();
+        WrongCat& operator=(const WrongCat& other);
         std::string getType() const;
-        void setBrainIdea(int index, const std::string& idea);
-        std::string getBrainIdea(int index) const;
+        void makeSound() const;
 };
 
 #endif
