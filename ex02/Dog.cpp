@@ -6,27 +6,27 @@
 /*   By: agorski <agorski@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/15 15:07:27 by agorski           #+#    #+#             */
-/*   Updated: 2025/05/21 12:03:23 by agorski          ###   ########.fr       */
+/*   Updated: 2025/05/21 13:22:15 by agorski          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
 #include "Dog.hpp"
 
-Dog::Dog() : Animal()
+Dog::Dog() : AAnimal()
 {
     this->brain_ = new Brain();
     this->type_ = "Dog";
     std::cout << "Dog default constructor called" << std::endl;
 }
 
-Dog::Dog(std::string type) : Animal(type)
+Dog::Dog(std::string type) : AAnimal(type)
 {
     this->brain_ = new Brain();
     std::cout << "Dog parameterized constructor called" << std::endl;
 }
 
-Dog::Dog(const Dog& other) : Animal(other)
+Dog::Dog(const Dog& other) : AAnimal(other)
 {
     this->brain_ = new Brain(*other.brain_);
     std::cout << "Dog copy constructor called" << std::endl;

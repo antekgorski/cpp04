@@ -6,17 +6,17 @@
 /*   By: agorski <agorski@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/19 13:44:58 by agorski           #+#    #+#             */
-/*   Updated: 2025/05/21 12:02:41 by agorski          ###   ########.fr       */
+/*   Updated: 2025/05/21 13:22:04 by agorski          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef CAT_HPP
 # define CAT_HPP
 
-# include "Animal.hpp"
+# include "AAnimal.hpp"
 # include "Brain.hpp"
 
-class Cat : public Animal
+class Cat : public AAnimal
 {
     private:
         Brain* brain_;

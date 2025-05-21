@@ -6,26 +6,26 @@
 /*   By: agorski <agorski@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/19 13:44:55 by agorski           #+#    #+#             */
-/*   Updated: 2025/05/21 12:03:08 by agorski          ###   ########.fr       */
+/*   Updated: 2025/05/21 13:21:55 by agorski          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Cat.hpp"
 
-Cat::Cat() : Animal()
+Cat::Cat() : AAnimal()
 {
     this->brain_ = new Brain();
     this->type_ = "Cat";
     std::cout << "Cat default constructor called" << std::endl;
 }
 
-Cat::Cat(std::string type) : Animal(type)
+Cat::Cat(std::string type) : AAnimal(type)
 {
     this->brain_ = new Brain();
     std::cout << "Cat parameterized constructor called" << std::endl;
 }
 
-Cat::Cat(const Cat& other) : Animal(other)
+Cat::Cat(const Cat& other) : AAnimal(other)
 {
     this->brain_ = new Brain(*other.brain_);
     std::cout << "Cat copy constructor called" << std::endl;

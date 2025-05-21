@@ -6,7 +6,7 @@
 /*   By: agorski <agorski@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/15 15:05:49 by agorski           #+#    #+#             */
-/*   Updated: 2025/05/21 12:22:13 by agorski          ###   ########.fr       */
+/*   Updated: 2025/05/21 13:18:50 by agorski          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,33 +18,6 @@
 
 int main()
 {
-// //const Animal* meta = new Animal();
-// const Animal* j = new Dog();
-// const Animal* i = new Cat();
-// std::cout << j->getType() << " ";
-// j->makeSound();
-// std::cout << i->getType() << " ";
-// i->makeSound(); //will output the cat sound!
-// Cat testBtain;
-// testBtain.setBrainIdea(0, "I am a cat");
-// std::cout << testBtain.getBrainIdea(0) << std::endl;
-
-
-//std::cout << meta->getType() << " ";
-//meta->makeSound();
-//delete meta;
-// delete j;
-// delete i;
-
-//const WrongAnimal* t = new WrongAnimal();
-// const WrongAnimal* k = new WrongCat();
-// std::cout << k->getType() << " ";
-// k->makeSound(); //will output the WrongCat sound!
-// //std::cout << t->getType() << " ";
-// //t->makeSound();
-// //delete t;
-// delete k;
-
 Animal* animalArr[10];
 for (int i = 0; i < 5; i++)
 {

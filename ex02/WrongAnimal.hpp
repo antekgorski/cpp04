@@ -6,14 +6,14 @@
 /*   By: agorski <agorski@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/15 15:10:10 by agorski           #+#    #+#             */
-/*   Updated: 2025/05/19 18:53:46 by agorski          ###   ########.fr       */
+/*   Updated: 2025/05/21 13:25:38 by agorski          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef WRONGANIAL_HPP
 # define WRONGANIAL_HPP
 
-# include "Animal.hpp"
+# include "AAnimal.hpp"
 
 class WrongAnimal
 {

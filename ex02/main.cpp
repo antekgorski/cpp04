@@ -6,21 +6,21 @@
 /*   By: agorski <agorski@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/15 15:05:49 by agorski           #+#    #+#             */
-/*   Updated: 2025/05/21 12:22:13 by agorski          ###   ########.fr       */
+/*   Updated: 2025/05/21 13:22:51 by agorski          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "WrongAnimal.hpp"
 #include "WrongCat.hpp"
-#include "Animal.hpp"
+#include "AAnimal.hpp"
 #include "Dog.hpp"
 #include "Cat.hpp"
 
 int main()
 {
-// //const Animal* meta = new Animal();
-// const Animal* j = new Dog();
-// const Animal* i = new Cat();
+// //const AAnimal* meta = new AAnimal();
+// const AAnimal* j = new Dog();
+// const AAnimal* i = new Cat();
 // std::cout << j->getType() << " ";
 // j->makeSound();
 // std::cout << i->getType() << " ";
@@ -45,23 +45,23 @@ int main()
 // //delete t;
 // delete k;
 
-Animal* animalArr[10];
+AAnimal* AAnimalArr[10];
 for (int i = 0; i < 5; i++)
 {
-    animalArr[i] = new Dog();
+    AAnimalArr[i] = new Dog();
 }
 for (int i = 5; i < 10; i++)
 {
-    animalArr[i] = new Cat();
+    AAnimalArr[i] = new Cat();
 }
 for (int i = 0; i < 10; i++)
 {
-    animalArr[i]->makeSound();
+    AAnimalArr[i]->makeSound();
 }
 
 for (int i = 0; i < 10; i++)
 {
-    delete animalArr[i];
+    delete AAnimalArr[i];
 }
 
 return 0;
